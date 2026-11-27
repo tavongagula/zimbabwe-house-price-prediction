@@ -1,0 +1,16 @@
+step,rows_before,rows_after,rows_removed,note
+Loaded,6035,6035,0,
+Drop repeated listing_id,6035,6035,0,
+Drop near-duplicate listings,6035,5979,56,same description + price + suburb; newest kept
+Prices in one currency (USD),5979,5979,0,0 ZWG rows; currencies present: ['USD']
+Keep houses only (modelling set),5979,2307,3672,other types stay in all_listings_deduped.csv
+Drop listings with no price (P.O.A.),2307,2294,13,target variable missing
+Drop implausible prices,2294,2290,4,"outside $5,000-$5,000,000"
+Drop missing / extreme bedroom counts,2290,2283,7,outside 1-12 bedrooms
+Impossible value -> missing,,,0,1 values: bathrooms outside 1-12
+Impossible value -> missing,,,0,2 values: garages above 10
+Impossible value -> missing,,,0,157 values: floor size outside 25-4000 m2
+Impossible value -> missing,,,0,47 values: land size outside 50-100000 m2
+Impossible value -> missing,,,0,1 values: map pin outside Zimbabwe (houses)
+Fill missing values,2283,2283,0,garages->0; bathrooms by bedrooms; floor by city+bedrooms; land by area; lat/lon by suburb; *_imputed flags kept
+FINAL modelling set -> data/houses_clean.csv,2283,2283,0,94 columns

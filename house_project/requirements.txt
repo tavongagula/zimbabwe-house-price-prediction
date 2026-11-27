@@ -1,0 +1,15 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+torch
+torchvision
+sentence-transformers
+Pillow
+requests
+beautifulsoup4
+lxml
+tqdm
+jupyter
+ipykernel

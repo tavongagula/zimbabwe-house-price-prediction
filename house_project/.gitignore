@@ -1,0 +1,18 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints (this is usually the biggest culprit!)
+.ipynb_checkpoints/
+.ipynb_checkpoints
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db

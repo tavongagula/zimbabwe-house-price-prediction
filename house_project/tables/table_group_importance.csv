@@ -1,0 +1,7 @@
+,increase_in_RMSE_log,sd
+"Advert details (length, age, has photo)",0.003,0.003
+Amenities list,0.005,0.004
+"Rooms (bedrooms, bathrooms, garages)",0.042,0.006
+Keywords in the description,0.078,0.008
+"Location (city, area, suburb, coordinates)",0.273,0.016
+Size (floor and land),0.43,0.017

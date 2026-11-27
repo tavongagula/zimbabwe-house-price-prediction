@@ -1,0 +1,5 @@
+price band,houses,median_abs_pct_error,median_pct_bias
+under $100k,95,18.9,16.0
+$100k-250k,118,14.5,1.9
+$250k-500k,67,17.2,5.0
+over $500k,63,23.4,-10.6

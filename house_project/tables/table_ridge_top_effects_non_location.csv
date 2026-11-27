@@ -1,0 +1,16 @@
+,coefficient,approx_price_effect_%
+log_land,0.386,47.074
+n_amenities,0.266,30.41
+flag_borehole,0.187,20.54
+garages_not_stated,-0.163,-15.06
+flag_cession,-0.15,-13.931
+amen_water_tank,-0.131,-12.236
+flag_verandah,-0.13,-12.16
+flag_needs_work,-0.129,-12.127
+amen_intercom_system,-0.127,-11.917
+amen_borehole,-0.124,-11.673
+flag_commercial_use,0.12,12.698
+amen_electric_fence,-0.117,-11.054
+amen_swimming_pool,0.104,10.971
+amen_staff_quarters,-0.103,-9.777
+flag_cluster_or_complex,0.097,10.182

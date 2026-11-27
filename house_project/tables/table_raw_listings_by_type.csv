@@ -1,0 +1,14 @@
+property_type_url,listings,median_price_usd,price_missing_pct
+houses,2329,185000.0,0.6
+residential-land-stands,1467,50000.0,4.5
+commercial-land,349,320000.0,0.9
+flats-apartments,343,150000.0,0.6
+warehouses,314,780000.0,1.0
+townhouses,310,240000.0,0.3
+agricultural-land-farms,246,160000.0,1.2
+land,157,65000.0,0.0
+garden-flats,141,160000.0,0.0
+commercial-property,140,695000.0,0.7
+shops,118,400000.0,2.5
+offices,66,800000.0,0.0
+lodges-hotels,52,745000.0,7.7
