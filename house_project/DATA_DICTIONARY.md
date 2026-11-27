@@ -3,6 +3,7 @@
 Source: listings scraped from https://www.property.co.zw (asking prices for properties **for sale**). Each row is one listing. `date_collected` records the day it was scraped (22–25 November 2026).
 
 | File | What it is |
+|---|---|
 | `data/listings_raw.csv` | Everything collected: 6,035 listings of all property types (houses, townhouses, flats, land, commercial), exactly as scraped. |
 | `data/all_listings_deduped.csv` | The same after removing duplicates, with `price_usd`, `city_clean` and `area_clean` added. |
 | `data/houses_clean.csv` | **The modelling set**: cleaned houses only (one row per house; townhouses, flats and land are excluded). Described below. |

@@ -4,6 +4,7 @@ import re
 # Many adverts quote the price in the description ("USD 670,000", "$450k", "asking 380 000"). The price is the
 # variable we are predicting, so any amount of money is replaced by a neutral token before the text is embedded.
 _NUM = r"\d{1,3}(?:[ ,\.]\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?"
+_CURRENCY_FIRST = re.compile(rf"(?i)(?:us\s?\$\.?|u\$d|usd|zwg|zig|\$)\s*\.?\s*(?:{_NUM})(?:\s?(?:k|m|mil(?:lion)?|thousand)\b)?")
 _CURRENCY_LAST = re.compile(rf"(?i)(?:{_NUM})\s?(?:k|m|mil(?:lion)?|thousand)?\s?(?:usd|us\s?\$|dollars?|zwg)\b")
 _K_SUFFIX = re.compile(r"(?i)\b\d{2,4}\s?k\b")
 _PRICE_WORD = re.compile(rf"(?i)\b(?:asking|price[d]?|selling for|for sale at|offers? (?:over|from|above)|valued at)\b[^.\n\d]{{0,25}}(?:{_NUM})(?!\s?(?:m2|m²|sqm|sq|square|ha\b|hectares?|acres?|bed|bath|%|metres?|meters?|km|rooms?))")
